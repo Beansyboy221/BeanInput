@@ -1,0 +1,47 @@
+[build-system]
+requires = ["uv_build >= 0.11.7, <0.12.0"]
+build-backend = "uv_build"
+
+[project]
+name = "beaninput"
+version = "1.0.0"
+description = "Utilities for polling input devices (keyboard, mouse, controller)"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Wyatt Rosinski" },
+]
+requires-python = ">=3.11"
+keywords = ["input", "polling", "keyboard", "mouse", "controller", "gamepad"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: System :: Hardware",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = [
+    "pydantic>=2.0",
+    "pynput>=1.7",
+    "pygame>=2.0",
+    "pywin32; sys_platform == 'win32'",
+    "pyobjc-framework-Quartz; sys_platform == 'darwin'",
+    "evdev; sys_platform == 'linux'",
+]
+
+[project.urls]
+Home = "https://github.com/Beansyboy221/beaninput"
+Source = "https://github.com/Beansyboy221/beaninput"
+Tracker = "https://github.com/Beansyboy221/beaninput/issues"
+Documentation = "https://github.com/Beansyboy221/beaninput/tree/main/docs/usage.md"
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

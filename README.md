@@ -14,4 +14,4 @@ pip install beaninput
 
 ### Documentation
 
-Read the [Usage Guide](https://github.com/Beansyboy221/beaninput/tree/main/docs/usage.md) to understand all of the features of BeanInput and how to use them.
+Read the [Usage Guide](https://github.com/Beansyboy221/BeanInput/tree/main/docs/usage.md) to understand all of the features of BeanInput and how to use them.
